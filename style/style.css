@@ -797,6 +797,41 @@ h6 {
   .header__logo {
     text-align: center;
   }
+  .header__burger {
+    background-color: #eeeeee;
+    height: 39px;
+    padding-left: 10px;
+    width: 34px;
+    position: relative;
+  }
+  .header__burger:hover {
+    cursor: pointer;
+  }
+  .header__burger span {
+    top: 50%;
+    -webkit-transform: translateY(-50%);
+            transform: translateY(-50%);
+    position: absolute;
+    width: 28px;
+    height: 3px;
+    background-color: #333;
+  }
+  .header__burger span:before {
+    content: "";
+    position: absolute;
+    width: 34px;
+    height: 3px;
+    top: -10px;
+    background-color: #333;
+  }
+  .header__burger span:after {
+    content: "";
+    position: absolute;
+    width: 34px;
+    height: 3px;
+    top: 10px;
+    background-color: #333;
+  }
   .footer__services {
     margin-bottom: 18px;
   }

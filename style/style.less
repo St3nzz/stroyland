@@ -858,6 +858,41 @@ h5,h6{
         &__logo{
             text-align: center;
         }
+        &__burger{
+            background-color: @gray;
+            // padding: 18px 14px;
+            height: 39px;
+            padding-left: 10px;
+            width: 34px;
+            position: relative;
+            &:hover{
+                cursor: pointer;
+            }
+            span{
+                top: 50%;
+                transform: translateY(-50%);
+                position: absolute;
+                width: 28px;
+                height: 3px;
+                background-color: #333;
+                &:before{
+                    content: "";
+                    position: absolute;
+                    width: 34px;
+                    height: 3px;
+                    top: -10px;
+                    background-color: #333;
+                }
+                &:after{
+                    content: "";
+                    position: absolute;
+                    width: 34px;
+                    height: 3px;
+                    top: 10px;
+                    background-color: #333;
+                }
+            }
+        }
     }
 
     // Footer
