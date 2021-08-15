@@ -29,6 +29,9 @@ h5,
 h6 {
   font-size: 18px;
 }
+.phone__none {
+  display: none;
+}
 .shadow {
   width: 1340px;
   margin: 0 auto;
@@ -112,7 +115,7 @@ h6 {
   outline: none;
   padding: 18px 20px;
   width: 100%;
-  height: 34px;
+  height: 38px;
   border-radius: 20px;
   border: 1px solid #d1d1d1;
   padding-right: 40px;
@@ -156,6 +159,39 @@ h6 {
 }
 .header .active::placeholder {
   color: #fff;
+}
+.header__cart {
+  position: relative;
+}
+.header__cart-value {
+  font-size: 16px;
+  position: absolute;
+  top: -2px;
+  right: -10px;
+  background-color: #fae01a;
+  width: 25px;
+  height: 25px;
+  border-radius: 20px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+.header__user {
+  height: 68px;
+}
+.header__user img {
+  width: 50px;
+}
+.header__user p {
+  text-align: center;
+  font-size: 17px;
+  margin: 0;
 }
 .nav__items {
   background-color: #fae01a;
@@ -513,7 +549,7 @@ h6 {
   .header__input {
     padding: 14px 16px;
     font-size: 16px;
-    height: 34px;
+    height: 36px;
   }
   .nav__items {
     height: 60px;
@@ -638,9 +674,7 @@ h6 {
     margin-left: -28px;
   }
   .header__input {
-    padding: 12px 14px;
-    font-size: 14px;
-    height: 32px;
+    height: 34px;
   }
   .nav__items {
     height: 52px;
@@ -762,6 +796,9 @@ h6 {
   }
   .top__mail {
     display: none;
+  }
+  .footer__services {
+    margin-bottom: 18px;
   }
 }
 @media screen and (max-width: 767px) {
