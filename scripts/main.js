@@ -6,8 +6,30 @@ input.onblur = () => {
     input.classList.remove('active');
 }
 
-top__mail = document.getElementById('top__mail');
-document.documentElement.clientWidth <= 974 ? top__mail.style.display = "none" : top__mail.style.display = "block";
-window.addEventListener('resize',function(){    
-    document.documentElement.clientWidth <= 974 ? top__mail.style.display = "none" : top__mail.style.display = "block";
+phone_none = document.getElementsByClassName('phone__none');
+
+// Static
+
+if (document.documentElement.clientWidth <= 974){
+    for(i = 0; i < phone_none.length; i++){
+        phone_none[i].style.display = "none";
+    }
+} else {
+    for(i = 0; i < phone_none.length; i++){
+        phone_none[i].style.display = "block";
+    }
+}
+
+// Dynamic
+
+window.addEventListener('resize',function(){      
+    if (document.documentElement.clientWidth <= 974){
+        for(i = 0; i < phone_none.length; i++){
+            phone_none[i].style.display = "none";
+        }
+    } else {
+        for(i = 0; i < phone_none.length; i++){
+            phone_none[i].style.display = "block";
+        }
+    }
 });

@@ -29,9 +29,6 @@ h5,
 h6 {
   font-size: 18px;
 }
-.phone__none {
-  display: none;
-}
 .shadow {
   width: 1340px;
   margin: 0 auto;
@@ -796,6 +793,9 @@ h6 {
   }
   .top__mail {
     display: none;
+  }
+  .header__logo {
+    text-align: center;
   }
   .footer__services {
     margin-bottom: 18px;
